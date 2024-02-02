@@ -6,6 +6,7 @@ import Cert from "./components/pages/Cert";
 import Home from "./components/pages/Home";
 import Login from "./components/pages/Login";
 import CardDetail from "./components/pages/CardDetail";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Route path="/Cert" element={<Cert />} />
         <Route path="/Login" element={<Login/>} />
       </Routes>
+      <Footer />
+      
     </>
   );
 }

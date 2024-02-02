@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+
 }
 
 .navBar {
@@ -14,104 +14,181 @@
   color: white;
   padding: 20px;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.3);
-
+  font-family: "Open Sans", sans-serif;
 }
 
 .navBar--title {
-    color: white;
-    text-decoration: none;
-    font-size: xx-large;
-    align-self: center;
+  color: white;
+  text-decoration: none;
+  font-size: xx-large;
+  align-self: center;
 }
 
 .navBar--cert {
-    color: white;
-    text-decoration: none;
-    font-size: large;
-    align-self: center;
-    margin: 0px 30px;
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  align-self: center;
+  margin: 0px 30px;
 }
 
+
 .navBar--feedback {
-    margin: 0px 30px;
-    color: white;
-    text-decoration: none;
-    font-size: large;
-    align-self: center;
+  margin: 0px 30px;
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  align-self: center;
 }
 
 .navBar--login {
-    margin: 0px 30px;
-    color: white;
-    text-decoration: none;
-    font-size: large;
-    align-self: center;
+  margin: 0px 30px;
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  align-self: center;
 }
-
-
 
 .login--label {
-    display: block;
-    font-size: larger;
-    color: black;
-    padding: 5px;
+  display: block;
+  font-size: larger;
+  color: black;
+  padding: 5px;
 }
- 
+
 .login--input {
-    font-size: larger;
-    padding: 5px;
-    margin: 2px;
- 
+  font-size: larger;
+  padding: 5px;
+  margin: 2px;
 }
- 
+
 .login--btn {
-    color: black;
-    background-color: red;
-    border-radius: 5px;
-    font-size: larger;
-    display: block;
-    padding: 5px;
-    margin: 10px auto;
+  color: black;
+  background-color: red;
+  border-radius: 5px;
+  font-size: larger;
+  display: block;
+  padding: 5px;
+  margin: 10px auto;
 }
- 
+
 .login--messages {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
- 
+
 .login--error {
-    display: block;
-    background-color: red;
-    color: black;
-    width: fit-content;
-    height: 50px;
-    padding: 5px;
+  display: block;
+  background-color: red;
+  color: black;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
 }
- 
+
 .login--success {
-    display: block;
-    background-color: lightblue;
-    color: black;
-    width: fit-content;
-    height: 50px;
-    padding: 5px;
+  display: block;
+  background-color: lightblue;
+  color: black;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
 }
 
 .login--form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .login--form > form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .login--main {
-    width: 100vh;
-    height: 100vh;
-    margin: 50px;
-    outline: solid 1px black;
-    display: flex;
-    justify-content: center;
+  width: 100vh;
+  height: 100vh;
+  margin: 50px;
+  outline: solid 1px black;
+  display: flex;
+  justify-content: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.home--text {
+    max-width: 40rem;
+}
+
+.home--picture {
+  max-width: 50rem;
+  margin-top: 10px;
+}
+
+.home--cards {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.card {
+  width: 30rem;
+  background: linear-gradient(
+    89.7deg,
+    rgb(0, 32, 95) 2.8%,
+    rgb(132, 53, 142) 97.8%
+  );
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-size: 1rem;
+  transition: transform 0.8s ease;
+
+}
+
+.card--image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card--content {
+  padding: 20px;
+  color: whitesmoke;
+  margin-bottom: 10px;
+}
+
+.card--name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: azure;
+}
+
+.card--button {
+    display: inline-block;
+    background: linear-gradient(243.3deg, rgb(247, 164, 216) 35.7%, rgb(115, 102, 252) 121.6%);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 0.6rem;
+    padding: 5px 10px;
+    color: black;
+    transition: transform 0.6s ease;
+}
+
+.card--button:hover {
+    transform: translateY(-3px);
+}
+
+.card:hover {
+    transform: translateY(-8px);
 }

@@ -14,8 +14,8 @@ const data = [
     {
         id: 2,
         img:"https://www.pacificangelshomecare.com/wp-content/uploads/2022/07/comparing-different-types-of-elder-care-services.jpg",
-        name: "How to care for the elderly",
-        date:"10th April 2024",
+        name: "Elder Care",
+        date:"30th March 2024",
         type:"Training",
         isFavourite:false,
         description:"lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -25,7 +25,7 @@ const data = [
         id: 3,
         img:"https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_800,q_75,w_1200/v1/clients/durangoco/MANNA18_17_16_36_eff1ab49-871a-4de2-ab66-dd5772ea0b19.jpg",
         name: "Soup Kitchen",
-        date:"10th Sep 2024",
+        date:"18th Sep 2024",
         type:"Workshop",
         isFavourite:false,
         description:"lorem ipsum dolor sit amet, consectetur adipiscing",
@@ -40,7 +40,8 @@ const data = [
         isFavourite:false,
         description:"lorem ipsum dolor sit amet, consectetur adipiscing wadsfa",
         location: "Keat Hong Camp"
-    }
+    },
+
     
 ]
 

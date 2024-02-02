@@ -3,11 +3,9 @@ import { useParams } from "react-router-dom";
 import data from "../../Data";
 
 export default function CardDetail() {
-  let { id } = useParams();
-  const activity = data.find(function (dataset) {
-    console.log(id)
-    console.log(dataset.id)
-    return String(dataset.id) === id;
+  let { id } = useParams(); //This takes the current parameter id of the url you currently are inside and saves it to a variable. Basically its the url from inside the  <Link /> component that linked you here
+  const activity = data.find(function (dataset) {  
+    return String(dataset.id) === id; //Returns the first array from data that has an id of id.
   });
   return (
     <div>

@@ -17,22 +17,25 @@ export default function Home(props) {
       />
     );
   });
+
   return (
-    <>
+    <main className="home">
       <div>
-        <img
+        <img 
+          className="home--picture"
           src="https://static.vecteezy.com/system/resources/previews/006/582/230/original/raised-hands-with-heart-isolated-on-white-background-volunteering-charity-donate-blood-concept-thank-for-care-vote-of-crowd-flat-design-vector.jpg"
           alt="volunteering people"
         ></img>
       </div>
-      <div>
+      <div className="home--text">
         <h1>Welcome new volunteer,</h1>
         <p>
-          Join unique interactive activities led by one-of-a-kind hosts-all
+          Join new and unique interactive activities led by one-of-a-kind hosts, all 
           without leaving the comfort of your own home.
         </p>
+        <hr></hr>
       </div>
-      <div>{cards}</div>
-    </>
+      <div className="home--cards">{cards}</div>
+    </main>
   );
 }
