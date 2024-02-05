@@ -1,116 +1,40 @@
-import React from "react";
-import { useState } from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import {
+  MDBInput,
+  MDBCol,
+  MDBRow,
+  MDBCheckbox,
+  MDBBtn,
+  MDBIcon
+} from 'mdb-react-ui-kit';
 
 export default function Login() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  // States for checking the errors
-  const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState(false);
-
-  // Handling the name change
-  const handleName = (e) => {
-    setName(e.target.value);
-    setSubmitted(false);
-  };
-
-  // Handling the email change
-  const handleEmail = (e) => {
-    setEmail(e.target.value);
-    setSubmitted(false);
-  };
-
-  // Handling the password change
-  const handlePassword = (e) => {
-    setPassword(e.target.value);
-    setSubmitted(false);
-  };
-
-  // Handling the form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (name === "" || email === "" || password === "") {
-      setError(true);
-    } else {
-      setSubmitted(true);
-      setError(false);
-    }
-  };
-
-  // Showing success message
-  const successMessage = () => {
-    return (
-      <div
-        className="login--success"
-        style={{
-          display: submitted ? "" : "none",
-        }}
-      >
-        <h1>User {name} successfully registered!!</h1>
-      </div>
-    );
-  };
-
-  // Showing error message if error is true
-  const errorMessage = () => {
-    return (
-      <div
-        className="login--error"
-        style={{
-          display: error ? "" : "none",
-        }}
-      >
-        <h1>Please enter all the fields</h1>
-      </div>
-    );
-  };
-
   return (
-    <main className="login--main">
-      <div className="login--form">
-        <div>
-          <h1>User Registration</h1>
-        </div>
+    <div className='login--container'>
+    <form className='login--form'>
+      <MDBInput className='mb-4' type='email' id='form2Example1' label='Email address' />
+      <MDBInput className='mb-4' type='password' id='form2Example2' label='Password' />
 
-        {/* Calling to the methods */}
-        <div className="login--messages">
-          {errorMessage()}
-          {successMessage()}
-        </div>
+      <MDBRow className='mb-4'>
+        <MDBCol className='d-flex justify-content-center'>
+          <MDBCheckbox id='form2Example3' label='Remember me' defaultChecked />
+        </MDBCol>
+        <MDBCol>
+          <a href='#!'>Forgot password?</a>
+        </MDBCol>
+      </MDBRow>
 
-        <form>
-          {/* Labels and inputs for form data */}
-          <label className="login--label">Name</label>
-          <input
-            onChange={handleName}
-            className="input"
-            value={name}
-            type="text"
-          />
+      <MDBBtn type='submit' className='mb-4' block>
+        Sign in
+      </MDBBtn>
 
-          <label className="login--label">Email</label>
-          <input
-            onChange={handleEmail}
-            className="input"
-            value={email}
-            type="email"
-          />
-
-          <label className="login--label">Password</label>
-          <input
-            onChange={handlePassword}
-            className="input"
-            value={password}
-            type="password"
-          />
-
-          <button onClick={handleSubmit} className="login--btn" type="submit">
-            Submit
-          </button>
-        </form>
+      <div className='text-center'>
+        <p>
+          Not a member? <Link to="../Register">Register</Link>
+        </p> 
       </div>
-    </main>
+    </form>
+    </div>
   );
 }
