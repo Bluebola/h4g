@@ -51,6 +51,14 @@
   align-self: center;
 }
 
+.navBar--admin {
+    margin: 0px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    align-self: center;
+}
+
 .login--container {
   min-height: 100vh;
   display: flex;

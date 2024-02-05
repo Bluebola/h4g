@@ -1,13 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import {
   MDBInput,
   MDBCol,
   MDBRow,
   MDBCheckbox,
   MDBBtn,
-  MDBIcon,
 } from "mdb-react-ui-kit";
-
 
 export default function Register() {
   //This is the state variable that holds the user's info as they fill up the register form.
@@ -18,7 +18,6 @@ export default function Register() {
     password: "",
   });
 
-
   //This function will update the registerInfo object everytime any of the inputs have changed.
   function handleChange(event) {
     setRegisterInfo((registerInfo) => {
@@ -28,7 +27,7 @@ export default function Register() {
       };
     });
   }
-  
+
   console.log(registerInfo);
 
   function handleClick(event) {
@@ -80,9 +79,11 @@ export default function Register() {
           defaultChecked
         />
 
-        <MDBBtn type="submit" className="mb-4" block onClick = {handleClick} >
-          Sign up
-        </MDBBtn>
+        <Link to="../Login">
+          <MDBBtn type="submit" className="mb-4" block onClick={handleClick}>
+            Sign up
+          </MDBBtn>
+        </Link>
       </form>
     </div>
   );
