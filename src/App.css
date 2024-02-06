@@ -218,11 +218,12 @@
 
 .cardDetail--info {
   flex: 65%;
+  margin-left: 10rem;
 }
 
 .cardDetail--card{
   flex: 35%;
 }
 .cardDetail--image {
-  width: 70%;
+  width: 100%;
 }

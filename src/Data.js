@@ -6,9 +6,10 @@ const data = [
     date: "10th Feb 2024",
     type: "Workshop",
     isFavourite: false,
-    description: "lorem ipsum dolor sit amet, consectetur adipiscing",
-    location: "Chong Pang",
+    description: "Join our ocean cleanup initiative, where dedicated volunteers unite to combat marine pollution. Armed with determination and tools, we remove debris, safeguarding marine ecosystems and preserving biodiversity. Together, we make a tangible difference, ensuring a cleaner, safer ocean for future generations.",
+    location: "Chong Pang Street 74 Singapore 938274",
     spots: 4,
+    time: "1800 - 2000",
   },
   {
     id: 2,
@@ -18,8 +19,9 @@ const data = [
     type: "Training",
     isFavourite: false,
     description: "lorem ipsum dolor sit amet, consectetur adipiscing",
-    location: "Serangoon",
+    location: "Serangoon Street 74 Singapore 938274",
     spots: 5,
+    time: "1800 - 2000",
   },
   {
     id: 3,
@@ -29,8 +31,9 @@ const data = [
     type: "Workshop",
     isFavourite: false,
     description: "lorem ipsum dolor sit amet, consectetur adipiscing",
-    location: "Aljunied",
+    location: "Aljunied Street 74 Singapore 938274",
     spots: 2,
+    time: "1800 - 2000",
   },
   {
     id: 4,
@@ -40,8 +43,9 @@ const data = [
     type: "Workshop",
     isFavourite: false,
     description: "lorem ipsum dolor sit amet, consectetur adipiscing wadsfa",
-    location: "Keat Hong Camp",
+    location: "Keat Hong Camp Street 74 Singapore 938274",
     spots: 8,
+    time: "1800 - 2000",
   },
   {
     id: 5,
@@ -51,8 +55,9 @@ const data = [
     type: "Workshop",
     isFavourite: false,
     description: "lorem ipsum dolor sit amet, consectetur adipiscing wadsfa",
-    location: "Keat Hong Camp",
+    location: "Keat Hong Camp Street 74 Singapore 938274",
     spots: 8,
+    time: "1800 - 2000",
   },
   {
     id: 6,
@@ -62,8 +67,9 @@ const data = [
     type: "Training",
     isFavourite: false,
     description: "lorem ipsum dolor sit amet, consectetur adipiscing wadsfa",
-    location: "Keat Hong Camp",
+    location: "Keat Hong Camp Street 74 Singapore 938274",
     spots: 8,
+    time: "1800 - 2000",
   },
 ];
 
