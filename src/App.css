@@ -221,9 +221,48 @@
   margin-left: 10rem;
 }
 
-.cardDetail--card{
+.cardDetail--cardContainer{
   flex: 35%;
+  
+}
+
+.cardDetail--card {
+  margin-top: 15rem;
+  border: 1px solid grey;
+  max-width: fit-content;
+  padding: 2rem;
+  border-radius: 10px;
 }
 .cardDetail--image {
-  width: 100%;
+  width: 80%;
+}
+
+.cardDetail--button {
+  width: 20rem;
+  margin-top: 3rem;
+  transition: transform 0.6s ease;
+
+}
+
+.cardDetail--button:hover {
+  transform: translateY(-3px);
+}
+
+.cert--container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.cert--card {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 30rem;
+  border-radius: 3px;
+  max-height: 3rem;
 }

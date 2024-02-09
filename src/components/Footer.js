@@ -47,36 +47,14 @@ export default function Footer() {
               <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">
                   <MDBIcon color="secondary" icon="gem" className="me-3" />
-                  Company name
+                  About us:
                 </h6>
                 <p>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
-                </p>
-              </MDBCol>
-
-              <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Products</h6>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Angular
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    React
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Vue
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Laravel
-                  </a>
+                  Our volunteer organization is dedicated to community service,
+                  environmental conservation, and social empowerment. Through
+                  collaborative efforts, we strive to make a meaningful impact
+                  and build a brighter future for all. Join us in our mission
+                  today!
                 </p>
               </MDBCol>
 
@@ -108,15 +86,15 @@ export default function Footer() {
                 <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                 <p>
                   <MDBIcon color="secondary" icon="home" className="me-2" />
-                  New York, NY 10012, US
+                  Singapore, SG 760328
                 </p>
                 <p>
                   <MDBIcon color="secondary" icon="envelope" className="me-3" />
-                  info@example.com
+                  volunteer@example.com
                 </p>
                 <p>
-                  <MDBIcon color="secondary" icon="phone" className="me-3" /> +
-                  01 234 567 88
+                  <MDBIcon color="secondary" icon="phone" className="me-3" />
+                  +65 99271174
                 </p>
                 <p>
                   <MDBIcon color="secondary" icon="print" className="me-3" /> +
